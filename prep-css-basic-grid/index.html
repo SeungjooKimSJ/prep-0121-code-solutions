@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>CSS Basic Grid</title>
+  <style>
+    .container {
+      max-width: 1250px;
+      margin: auto;
+    }
+
+    .row {
+      width: 100%;
+      display: flex;
+      flex-wrap: wrap;
+    }
+
+    .column {
+      max-width: calc(92% / 3);
+      margin: 5px;
+      padding: 5px;
+      background-color: #9b977f;
+      border-radius: 2%;
+      text-align: center;
+    }
+
+    .p-container {
+      height: 150px;
+    }
+
+    p {
+      padding: 5px;
+    }
+
+    img {
+      width: 100%;
+    }
+
+  </style>
+</head>
+
+<body>
+  <div class="container">
+    <div class="row">
+      <div class="column">
+        <div class="p-container">
+          <p>Lorem ipsum dolor, sit amet consectetur adipisicing
+            elit. Harum possimus odio ducimus natus, alias
+            laboriosam eveniet necessitatibus est blanditiis.
+            Qui, laudantium, iusto iure quo tempora unde adipisci,
+            velit reprehenderit itaque inventore soluta illum
+            molestias culpa.</p>
+        </div>
+        <img src="./images/left-image.jpg" alt="left">
+      </div>
+
+      <div class="column">
+        <div class="p-container">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Dolores mollitia, quisquam autem ea officia
+            dicta perferendis. Laudantium veritatis excepturi
+            provident quos tempore voluptatem ipsum nihil omnis
+            exercitationem dolorem nemo praesentium, cupiditate
+            deleniti incidunt impedit quo.</p>
+        </div>
+        <img src="./images/center-image.jpg" alt="center">
+      </div>
+
+      <div class="column">
+        <div class="p-container">
+          <p>Lorem ipsum dolor sit amet consectetur adipisicing
+            elit. Atque ullam porro quasi voluptatibus dolorum
+            a sunt ipsam magni! Modi, possimus placeat sequi ullam
+            ratione culpa maiores maxime qui ea commodi voluptatum,
+            dolore, officia expedita laborum!</p>
+        </div>
+        <img src="./images/right-image.jpg" alt="right">
+      </div>
+    </div>
+  </div>
+
+</body>
+</html>
