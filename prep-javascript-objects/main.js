@@ -15,9 +15,9 @@ console.log('The complete person object:', person);
 const myCar = { make: 'Lexus', model: 'RX350', year: '2012' };
 console.log('Car information:', myCar);
 
-myCar.owner = fullName;
-console.log('My name is ' + myCar.owner + ' and I drive a ' +
-myCar.year + ' ' + myCar.make + ' ' + myCar.model + '.');
+myCar['owner'] = fullName;
+console.log('My name is ' + myCar['owner'] + ' and I drive a ' +
+myCar['year'] + ' ' + myCar['make'] + ' ' + myCar['model'] + '.');
 
 myCar.color = 'White';
 console.log('My full car info:', myCar);
